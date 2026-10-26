@@ -4,110 +4,170 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email Signature</title>
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body
-    class="flex min-h-screen items-center justify-center bg-slate-100 p-4 font-sans"
+    style="
+      margin: 0;
+      padding: 24px;
+      background-color: #f1f5f9;
+      font-family: Arial, Helvetica, sans-serif;
+    "
   >
-    <div
-      class="flex w-full max-w-2xl items-stretch gap-4 rounded-xl bg-white p-4 text-slate-900 shadow-sm sm:gap-5"
+    <table
+      role="presentation"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      style="
+        border-collapse: collapse;
+        background-color: #ffffff;
+        color: #0f172a;
+      "
     >
-      <div class="w-24 h-100 overflow-hidden">
-        <img
-          src="assets/profile-portrait.jpg"
-          alt="Portrait of Aman Kauroo"
-          width="90"
-          height="160"
-          class="h-full w-full object-cover"
-        />
-      </div>
+      <tr>
+        <!-- Portrait -->
+        <td style="padding: 12px 18px; vertical-align: middle">
+          <img
+            src="assets/profile-portrait.jpg"
+            alt="Portrait of Aman Kauroo"
+            width="120"
+            height="190"
+            style="
+              display: block;
+              width: 120px;
+              height: 190px;
+              object-fit: cover;
+              border: 0;
+              border-radius: 5px;
+            "
+          />
+        </td>
 
-      <div class="min-w-0 flex-1">
-        <div class="text-lg font-bold leading-tight">
-          KAUROO Aman Nasrdeen Wazhir
-        </div>
-        <div class="mt-1 text-sm leading-5 text-slate-600">
-          BSc (Hons) Computer Science Year 1
-        </div>
-        <div class="text-sm leading-5 text-slate-600">
-          University of Mauritius
-        </div>
+        <!-- Contact information -->
+        <td
+          style="
+            padding: 18px 22px;
+            vertical-align: middle;
+            font-size: 13px;
+            line-height: 19px;
+            border-left: 1px solid #e2e8f0;
+          "
+        >
+          <!-- Full name -->
+          <div
+            style="
+              font-size: 18px;
+              font-weight: bold;
+              line-height: 23px;
+              color: #0f172a;
+            "
+          >
+            KAUROO Aman Nasrdeen Wazhir
+          </div>
 
-        <div class="mt-2 text-sm font-medium text-blue-900">
-          Web Development <span class="px-1 text-slate-400">|</span> Python
-          <span class="px-1 text-slate-400">|</span> Robotics
-        </div>
+          <!-- Academic details -->
+          <div style="padding-top: 4px; color: #475569">
+            BSc (Hons) Computer Science Year 1<br />
+            University of Mauritius
+          </div>
 
-        <div class="mt-2 space-y-0.5 text-sm text-slate-700">
-          <div>
+          <!-- Professional interests -->
+          <div
+            style="
+              padding-top: 8px;
+              font-size: 12px;
+              font-weight: bold;
+              color: #1e3a8a;
+            "
+          >
+            Web Development
+            <span style="color: #94a3b8">&nbsp;|&nbsp;</span>
+            Python
+            <span style="color: #94a3b8">&nbsp;|&nbsp;</span>
+            Robotics
+          </div>
+
+          <!-- Contact details -->
+          <div style="padding-top: 8px; color: #334155">
             <a
               href="mailto:aman.kauroo@umail.uom.ac.mu"
-              class="break-all hover:text-blue-900"
-              >Email: aman.kauroo@umail.uom.ac.mu</a
+              style="color: #334155; text-decoration: none"
             >
-          </div>
-          <div>
-            <a href="tel:+23058582189" class="hover:text-blue-900"
-              >Phone: +230 58582189</a
-            >
-          </div>
-        </div>
+              Email: aman.kauroo@umail.uom.ac.mu
+            </a>
+            <br />
 
-        <div class="mt-3 flex items-center gap-2">
-          <a
-            href="https://www.instagram.com/amankauroo"
-            aria-label="Instagram"
-            class="rounded-full transition-opacity hover:opacity-75"
+            <a
+              href="tel:+23058582189"
+              style="color: #334155; text-decoration: none"
+            >
+              Phone: +230 58582189
+            </a>
+          </div>
+
+          <!-- Social media icons -->
+          <table
+            role="presentation"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            style="border-collapse: collapse; margin-top: 12px"
           >
-            <img
-              src="assets/instagram.png"
-              alt=""
-              width="24"
-              height="24"
-              class="h-6 w-6"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/amankauroo"
-            aria-label="LinkedIn"
-            class="rounded-full transition-opacity hover:opacity-75"
-          >
-            <img
-              src="assets/linkedin.png"
-              alt=""
-              width="24"
-              height="24"
-              class="h-6 w-6"
-            />
-          </a>
-          <a
-            href="https://github.com/amankauroo"
-            aria-label="GitHub"
-            class="rounded-full transition-opacity hover:opacity-75"
-          >
-            <img
-              src="assets/github.png"
-              alt=""
-              width="24"
-              height="24"
-              class="h-6 w-6"
-            />
-          </a>
-          <a
-            href="https://amankauroo.vercel.app"
-            aria-label="Portfolio"
-            class="rounded-full transition-opacity hover:opacity-75"
-          >
-            <img
-              src="assets/world-wide-web.png"
-              alt=""
-              width="24"
-              height="24"
-              class="h-6 w-6"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
+            <tr>
+              <td style="padding-right: 10px">
+                <a href="https://www.instagram.com/amankauroo">
+                  <img
+                    src="assets/instagram.png"
+                    alt="Instagram"
+                    width="22"
+                    height="22"
+                    style="display: block; border: 0"
+                  />
+                </a>
+              </td>
+
+              <td style="padding-right: 10px">
+                <a href="https://www.linkedin.com/in/amankauroo">
+                  <img
+                    src="assets/linkedin.png"
+                    alt="LinkedIn"
+                    width="22"
+                    height="22"
+                    style="display: block; border: 0"
+                  />
+                </a>
+              </td>
+
+              <td style="padding-right: 10px">
+                <a href="https://github.com/amankauroo">
+                  <img
+                    src="assets/github.png"
+                    alt="GitHub"
+                    width="22"
+                    height="22"
+                    style="display: block; border: 0"
+                  />
+                </a>
+              </td>
+
+              <td>
+                <a href="https://amankauroo.vercel.app">
+                  <img
+                    src="assets/world-wide-web.png"
+                    alt="Portfolio"
+                    width="22"
+                    height="22"
+                    style="display: block; border: 0"
+                  />
+                </a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Calligraphic signature -->
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
